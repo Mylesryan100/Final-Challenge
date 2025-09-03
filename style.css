@@ -1,0 +1,46 @@
+:root {
+  --black: #000000;
+  --gray-dark: #222222;   
+  --gray-placeholder: #666666;
+  --green-accent: #005a00; 
+  --button-bg: #007000;   
+  --button-text: #ffffff; 
+  --button-hover-bg: #004d00; 
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--gray-dark);  
+}
+
+.contact-form-heading span {
+  color: var(--green-accent); 
+}
+
+.contact-input,
+.contact-textarea {
+  border: 2px solid var(--gray-dark);
+}
+
+.contact-input::-webkit-input-placeholder, 
+.contact-textarea::-webkit-input-placeholder {
+  color: var(--gray-placeholder); 
+}
+
+.contact-submit-button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin: 10px auto 0;
+  width: 200px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.contact-submit-button:hover,
+.contact-submit-button:focus {
+  background-color: var(--button-hover-bg);
+  outline: 3px solid var(--green-accent); 
